@@ -44,7 +44,6 @@ body {
     position: relative;
     left: 75px;
     top: 42px;
-    
 }
 
 #j-2 {
@@ -132,11 +131,18 @@ body {
 }
 
 #j-shadow {
-    background-color: #ff9933;
-    height: 225px;
-    width: 225px;
+    background-color: transparent;
     border-radius: 50%;
+    box-shadow: 15px 15px rgba(204, 102, 0,0.5);
+    
     position: relative;
+    height:225px;
+    width:225px;
+    border-radius: 50%;
+    bottom: 150px;
+    right:-5px;
+    bottom: 168px;
+    right:15px;
 
-    top: 0px;
+  
 }
