@@ -161,7 +161,7 @@ body {
 #main-ring {
     background:plum;
     height: 15px;
-    width: 220px;
+    width: 218px;
 
     position: relative;
     top: 80px;
@@ -172,14 +172,12 @@ body {
 
 #right-ring-1 {
     background: plum;
-    height: 15px;
-    width: 35px;
+    height: 14.85px;
+    width: 38px;
 
     position: relative;
-    /* top: 3px; */
-    top: -15px;
-    /* bottom: 1px; */
-    left: 130px;
+    top: -14.55px;
+    left: 128px;
    
     transform: rotate(150deg);
     z-index: -1;
@@ -195,4 +193,60 @@ body {
     bottom: 42.55px;
     left: 150px;
     transform: rotate(330deg);
+}
+
+#right-ring-4 {
+    background: #004466;
+    height: 25px;
+    width:35px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    bottom: 78px;
+    left: 150.5px;
+    transform: rotate(330deg);
+}
+
+/* ##### Saturn - Left Ring Styles ##### */
+#l-outer-1 {
+    background: plum;
+    height: 14.85px;
+    width: 38px;
+    position: relative;
+    bottom: 20px;
+    right: 25px;
+
+    transform: rotate(150deg);
+    z-index: -1;
+}
+
+#l-inner-1 {
+    background: plum;
+    height: 55px;
+    width: 55px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    position: relative;
+    bottom: 29px;
+    right: 38px;
+
+    transform: rotate(150deg);
+    z-index:-1;
+}
+
+#l-inner-2 {
+    background: #004466;
+    height: 28px;
+    width: 40px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    position: relative;
+    bottom: 73px;
+    right: 25px;
+
+    transform: rotate(150deg);
+    z-index: -1;
+    
 }
