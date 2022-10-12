@@ -155,30 +155,38 @@ body {
     border-radius: 50%;
     position: relative;
     top: 90px;
-    left: 350px;
+    left: 350px; 
+    
+ 
 }
 
 #main-ring {
-    background:plum;
-    height: 15px;
-    width: 218px;
+    background: plum;
+    height: 10px;
+    width: 182px;
 
     position: relative;
-    top: 80px;
-    left: -22px;
+    top: 86.5px;
+    /* left: 5px; */
+    right: 5px;
+    border-bottom-right-radius: 10px;
 
     transform: rotate(150deg);
 }
 
 #right-ring-1 {
     background: plum;
-    height: 14.85px;
+    height: 10px;
+    
     width: 38px;
+    width: 43px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 6px;
 
     position: relative;
-    top: -14.55px;
-    left: 128px;
-   
+    bottom: 11px;
+    left: 127.5px;
+
     transform: rotate(150deg);
     z-index: -1;
 }
@@ -187,48 +195,58 @@ body {
     background: plum;
     height: 54.25px;
     width: 50px;
+
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+
     position: relative;
     bottom: 42.55px;
+    bottom: 32.55px;
     left: 150px;
+
     transform: rotate(330deg);
+    z-index: -3;
 }
 
 #right-ring-4 {
     background: #004466;
-    height: 25px;
-    width:35px;
+    height: 35px;
+    width:40px;
+
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+
     position: relative;
-    bottom: 78px;
-    left: 150.5px;
+    bottom: 74px;
+    left: 149.25px;
+
     transform: rotate(330deg);
+    z-index:-2;
 }
 
 /* ##### Saturn - Left Ring Styles ##### */
-#l-outer-1 {
-    background: plum;
+/* #l-outer-1 {
+    background: red;
     height: 14.85px;
     width: 38px;
+
     position: relative;
-    bottom: 20px;
+    bottom: 10px;
     right: 25px;
 
     transform: rotate(150deg);
     z-index: -1;
-}
+} */
 
 #l-inner-1 {
     background: plum;
     height: 55px;
-    width: 55px;
+    width: 58px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     
     position: relative;
-    bottom: 29px;
+    bottom: 15px;
     right: 38px;
 
     transform: rotate(150deg);
@@ -237,16 +255,15 @@ body {
 
 #l-inner-2 {
     background: #004466;
-    height: 28px;
-    width: 40px;
+    height: 34px;
+    width: 44px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     
     position: relative;
-    bottom: 73px;
-    right: 25px;
+    bottom: 62px;
+    right: 27.5px;
 
     transform: rotate(150deg);
     z-index: -1;
-    
 }
