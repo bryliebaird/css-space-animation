@@ -23,6 +23,8 @@ body {
     height: 500px;
     width: 500px;
     position: relative;
+    z-index: -10;
+    text-align: center;
 }
 
 
@@ -132,17 +134,65 @@ body {
 
 #j-shadow {
     background-color: transparent;
-    border-radius: 50%;
     box-shadow: 15px 15px rgba(204, 102, 0,0.5);
+    border-radius: 50%;
     
     position: relative;
     height:225px;
     width:225px;
-    border-radius: 50%;
-    bottom: 150px;
-    right:-5px;
+    
     bottom: 168px;
     right:15px;
+}
 
-  
+
+/* ################### SATURN ################## */
+#saturn {
+    background: pink;
+    height: 175px;
+    width: 175px;
+    
+    border-radius: 50%;
+    position: relative;
+    top: 90px;
+    left: 350px;
+}
+
+#main-ring {
+    background:plum;
+    height: 15px;
+    width: 220px;
+
+    position: relative;
+    top: 80px;
+    left: -22px;
+
+    transform: rotate(150deg);
+}
+
+#right-ring-1 {
+    background: plum;
+    height: 15px;
+    width: 35px;
+
+    position: relative;
+    /* top: 3px; */
+    top: -15px;
+    /* bottom: 1px; */
+    left: 130px;
+   
+    transform: rotate(150deg);
+    z-index: -1;
+}
+
+#right-ring-3 {
+    background: plum;
+    height: 54.25px;
+    width: 50px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    bottom: 42.55px;
+    left: 150px;
+    transform: rotate(330deg);
 }
