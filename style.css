@@ -32,41 +32,51 @@ body {
 
 .star {
     background: #fff;
-    height: 8px;
-    width: 8px;
+    height: 5px;
+    width: 5px;
     border-radius: 50%;
     box-shadow: 0 0 5px 4px #FCF8E8;
     position: relative;
-    transition: width 3s;
 }
+
 
 #star1 {
     bottom: 157px;
     right: 125px;
+    animation: star-animation 3s infinite alternate;
 }
 
 #star2 {
     top: 170px;
     right: 47px;
+    animation: star-animation 5s infinite alternate;
+    animation-delay: 2s;
 }
 
 #star3 {
     top: 40px;
     right: 270px;
+    animation: star-animation 5s infinite alternate
 }
 
 #star4 {
     left: 600px;
+    animation: star-animation 2s infinite alternate;
+    animation-delay: 1s;
 }
 
 #star5{
     left: 750px;
     bottom: 225px;
+    animation: star-animation 5s infinite alternate;
+    animation-delay: 4s;
 }
 
 #star6 {
     left: 763px;
     top: 170px;
+    animation: star-animation 5s infinite alternate;
+    animation-delay: 3s;
 }
 
 
@@ -306,4 +316,11 @@ body {
 
     transform: rotate(150deg);
     z-index: -1;
+}
+
+
+/* ############  KEYFRAMES  ############### */
+@keyframes star-animation {
+    from {opacity: 1;}
+    to{opacity: 0;}
 }
