@@ -352,10 +352,12 @@ body {
     border-right: none;
     transform: rotate(180deg);
     position: relative;
+    left: 115px;
+    bottom: 140px;
 }
 
 #pipe2{
-    background-color:  green;
+    background-color: transparent;
     height:90px;
     width:42px;
     border:10px solid #4775ff;
@@ -363,6 +365,9 @@ body {
     border-right: none;
     transform: rotate(90deg);
     position: relative;
+    bottom: 34px;
+    left: 70px;
+    
     border-bottom: none;
 }
 
