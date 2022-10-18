@@ -322,15 +322,15 @@ body {
 }
 
 #btn1 {
-    background: blue;
+    background: #4875f9;
 }
 
 #btn2 {
-    background: yellow;
+    background: #ffd147;
 }
 
 #btn3 {
-    background: red;
+    background: #ec6f3d;
 }
 
 #btn4 {
@@ -342,6 +342,38 @@ body {
     width: 18px;
 }
 
+/* ############## TANK TUBE ################ */
+#pipe1 {
+    background-color: transparent;
+    height: 80px;
+    width: 80px;
+    border: 10px solid #4775ff;
+    border-radius: 40px 0px 0px 70px;
+    border-right: none;
+    transform: rotate(180deg);
+    position: relative;
+}
+
+#pipe2{
+    background-color:  green;
+    height:90px;
+    width:42px;
+    border:10px solid #4775ff;
+    border-radius:40px 0px 0px 0px;
+    border-right: none;
+    transform: rotate(90deg);
+    position: relative;
+    border-bottom: none;
+}
+
+#pipe-end {
+    height:10px;
+    width: 10px;
+    background-color: #4775ff;
+    background-color: red;
+    position: relative;
+    border-radius: 65%;
+}
 
 /* ############## Arms ################ */
 #left-arm {
