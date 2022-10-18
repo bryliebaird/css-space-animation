@@ -367,17 +367,18 @@ body {
     position: relative;
     bottom: 34px;
     left: 70px;
-    
     border-bottom: none;
 }
 
 #pipe-end {
-    height:10px;
-    width: 10px;
+    height:10.5px;
+    width: 10.5px;
     background-color: #4775ff;
-    background-color: red;
+   
     position: relative;
     border-radius: 65%;
+    left: 35px;
+    bottom: 10.25px;
 }
 
 /* ############## Arms ################ */
