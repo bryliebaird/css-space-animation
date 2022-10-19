@@ -638,6 +638,13 @@ body {
     z-index: -1;
 }
 
+.stars {
+    position: relative;
+    top: 220px;
+    right: 150px;
+    transform: rotateZ(20deg);
+}
+
 /* star tail styles */ 
 .starr {
     position: absolute;
@@ -712,7 +719,7 @@ body {
 }
 
 .starr:nth-child(1)::before, .starr:nth-child(1)::after {
-    animation-delay: 1s;
+    animation-delay: 1.2s;
 }
 
 /* star #3 (1st on page from top) */
@@ -723,7 +730,7 @@ body {
 }
 
 .starr:nth-child(2)::before, .starr:nth-child(2)::after {
-    animation-delay: 2s;
+    animation-delay: 1.4s;
 }
 
 
