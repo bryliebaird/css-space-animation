@@ -384,14 +384,14 @@ body {
 #left-arm {
     position: relative;
     left: 80px;
-    bottom: 8px;
+    bottom: 95px;
     transform: rotate(80deg);
 }
 
 #right-arm {
     position: relative;
     right:70px;
-    bottom: 120px;
+    bottom: 235px;
     transform: rotate(-80deg);
 }
 
@@ -465,16 +465,17 @@ body {
 /* ############## Legs ################ */
 #left-leg {
     position: relative;
-    left: 83px;
-    bottom: 40px;
+    left: 80px;
+    bottom: 155px;
     transform: rotate(-18deg);
+    z-index: -1;
 }
 
 #right-leg {
     position: relative;
-    right: 26px;
-    bottom: 110px;
-    transform: rotate(27deg);
+    right: 15px;
+    bottom: 226px;
+    transform: rotate(20deg);
 }
 
 .leg {
