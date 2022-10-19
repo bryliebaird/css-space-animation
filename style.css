@@ -210,12 +210,20 @@ body {
 }
 
 /* ################### ROCKETMAN ################# */
+.animation-wrapper{
+    animation-name: float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* position: relative;
+    bottom: 80px;
+    left:20px; */
+}
+
 #rocketman {
     position: relative;
-    left:82px;
-    bottom:350px;
+    right: 50px;
+    bottom:300px;
     transform: rotate(-30deg);
-    /* background: pink; */
     height: 10px;
 }
 
@@ -632,6 +640,13 @@ body {
 
 
 /* ############  KEYFRAMES  ############### */
+@keyframes float {
+    50%{
+      transform: translateY(38px);
+    }
+}
+
+
 @keyframes star-animation {
     from {opacity: 1;}
     to{opacity: 0;}
