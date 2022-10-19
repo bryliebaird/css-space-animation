@@ -639,6 +639,38 @@ body {
 }
 
 
+.starr {
+    /* position: absolute;
+    left: -50%;
+    right: -50%; */
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(-45deg, #59F1FF, rgba(0, 0, 225, 0));
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px #699BFF);
+}
+
+.starr::before, .starr::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 0;
+    height: 4px;
+    width: 30px;
+    background: #4775ff;
+    border-radius: 100%;
+    transform: translateX(50%) rotateZ(45deg);
+}
+
+.starr::after {
+    transform: translateX(50%) rotateZ(-45deg);
+}
+
+
+
+
+
+
 /* ############  KEYFRAMES  ############### */
 @keyframes float {
     50%{
