@@ -18,17 +18,6 @@ body {
     overflow: hidden;
 }
 
-/* .col-wrapper {
-    background: papayawhip;
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 #circle-bg {
     background: #013d5b;
     border-radius: 50%;
@@ -38,58 +27,6 @@ body {
     z-index: -10;
     text-align: center;
 }
-
-/* ################### STARS ################## */
-
-/* .star {
-    background: #fff;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    box-shadow: 0 0 5px 4px #FCF8E8;
-    position: relative;
-} */
-
-
-#star1 {
-    bottom: 157px;
-    right: 125px;
-    animation: star-animation 3s infinite alternate;
-}
-
-#star2 {
-    top: 170px;
-    right: 47px;
-    animation: star-animation 5s infinite alternate;
-    animation-delay: 2s;
-}
-
-#star3 {
-    top: 40px;
-    right: 270px;
-    animation: star-animation 5s infinite alternate
-}
-
-#star4 {
-    left: 600px;
-    animation: star-animation 2s infinite alternate;
-    animation-delay: 1s;
-}
-
-#star5{
-    left: 750px;
-    bottom: 225px;
-    animation: star-animation 5s infinite alternate;
-    animation-delay: 4s;
-}
-
-#star6 {
-    left: 763px;
-    top: 170px;
-    animation: star-animation 5s infinite alternate;
-    animation-delay: 3s;
-}
-
 
 /* ################### JUPITER ################## */
 #jupiter {
@@ -214,9 +151,6 @@ body {
     animation-name: float;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    /* position: relative;
-    bottom: 80px;
-    left:20px; */
 }
 
 #rocketman {
@@ -280,12 +214,6 @@ body {
     /* background: pink; */
 }
 
-#body-wrapper {
-    background: yellow;
-    height: 100%;
-}
-
-
 #body {
     background: #f2f2f2;
     height: 105px;
@@ -296,6 +224,8 @@ body {
     bottom: 53px;
 }
 
+
+/* ############## Suit Buttons ################ */
 .btn-wrap {
     background: darkgoldenrod;
     height: 100%;
@@ -313,8 +243,6 @@ body {
     position: relative;
     left: 25px;
     bottom: 100px;
-    /* left: 30px;
-    top: 25px; */
 
     display: flex;
     flex-direction: row;
@@ -350,7 +278,7 @@ body {
     width: 18px;
 }
 
-/* ############## TANK TUBE ################ */
+/* ############## Tank Pipe ################ */
 #pipe1 {
     background-color: transparent;
     height: 80px;
@@ -388,7 +316,7 @@ body {
     bottom: 10.25px;
 }
 
-/* ############## Arms ################ */
+/* ############## Rocketman Arms ################ */
 #left-arm {
     position: relative;
     left: 80px;
@@ -470,7 +398,8 @@ body {
  #lt {
     right: 5px;
  }
-/* ############## Legs ################ */
+
+/* ############## Rocketman Legs ################ */
 #left-leg {
     position: relative;
     left: 80px;
@@ -594,19 +523,6 @@ body {
     z-index:-2;
 }
 
-/* ##### Saturn - Left Ring Styles ##### */
-/* #l-outer-1 {
-    background: red;
-    height: 14.85px;
-    width: 38px;
-
-    position: relative;
-    bottom: 10px;
-    right: 25px;
-
-    transform: rotate(150deg);
-    z-index: -1;
-} */
 
 #l-inner-1 {
     background: plum;
@@ -637,103 +553,6 @@ body {
     transform: rotate(150deg);
     z-index: -1;
 }
-
-.stars-container {
-    position: relative;
-    top: 220px;
-    right: 150px;
-    transform: rotateZ(20deg);
-}
-
-/* star tail styles */ 
-.star {
-    position: absolute;
-    left: -60%;
-    right: -60%;
-    height: 4px;
-    /* width: 100px; */
-    background: linear-gradient(-45deg, #59F1FF, rgba(0, 0, 225, 0));
-    border-radius: 999px;
-    filter: drop-shadow(0 0 10px #699BFF);
-    animation:  star-tail 3s ease-in-out infinite,
-                star-falling 3s ease-in-out infinite;
-    animation-delay: 1s;
-}
-
-@keyframes star-tail {
-    0% {
-        width: 0px;
-    }
-    30% {
-        width: 100px;
-    }
-    100% {
-        width: 0px;
-    }
-}
-
-@keyframes star-falling {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(300px);
-    }
-}
-
-/* the actual "star" */ 
-.star::before, .star::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 2x);
-    right: 0;
-    height: 4px;
-    /* width: 30px; */
-    background: #4775ff;
-    background: #59F1FF;
-    border-radius: 100%;
-    transform: translateX(50%) rotateZ(45deg);
-    animation: star-shine 3s ease-in-out infinite;
-}
-
-@keyframes star-shine {
-    0% {
-        width: 0px;
-    }
-    50% {
-        width: 20px;
-    }
-    100% {
-        width: 0px;
-    }
-}
-
-.star::after {
-    transform: translateX(50%) rotateZ(-45deg);
-}
-
-/* star #2 (middle on page) */ 
-.star:nth-child(1){
-    top: calc(50% - 200px);
-    left: -250px;
-    animation-delay: 0s;
-}
-
-.star:nth-child(1)::before, .star:nth-child(1)::after {
-    animation-delay: 1.2s;
-}
-
-/* star #3 (1st on page from top) */
-.star:nth-child(2){
-    top: calc(50% - 175px);
-    left: -300px;
-    animation-delay: 1s;
-}
-
-.star:nth-child(2)::before, .star:nth-child(2)::after {
-    animation-delay: 1.4s;
-}
-
 
 
 
